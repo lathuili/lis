@@ -147,7 +147,7 @@ LIS_INT main(int argc, char* argv[])
     err = lis_esolver_create(&esolver);
     CHKERR(err);
 
-    lis_esolver_set_option("-eprint mem",esolver);
+    //    lis_esolver_set_option("-eprint mem",esolver);
     err = lis_esolver_set_optionC(esolver);
     CHKERR(err);    
     err = lis_esolve(A, x, &evalue0, esolver);
